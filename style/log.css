@@ -1,66 +1,49 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    background-image:url("/images/stock.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+@import url('https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&family=Poppins:wght@600&display=swap');
+
+
+.final-container
+{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 60vh;
+    margin-top:30px;
+    
+    margin-bottom: 64px;
 }
-header {
-
-    color: #8e2a2a;
-    font-size: 2em;
-    margin-bottom: 20px;
-    position: fixed;
-    font-family: 'open sans', Gadget, sans-serif;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-image:linear-gradient(to right, #d68e8e, #faf8f7);
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-     }
-
-
-
-
 .login-container {
-    background-color: #d59595;
+
     opacity: 1;
-    padding: 30px;
+    padding: 29px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
     text-align: center;
+    
 }
 
 .login-container h2 {
     margin-bottom: 20px;
     color: #333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+
 }
 
 .login-form .input-group {
     margin-bottom: 20px;
     text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
 }
 
 .login-form .input-group label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+   
 }
 
 .login-form .input-group input {
@@ -105,3 +88,4 @@ header {
 .signup-link a:hover {
     text-decoration: underline;
 }
+
