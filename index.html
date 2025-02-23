@@ -6,21 +6,24 @@
     <title>Stock Scan</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
-    <div class="logo-container">
-        <P>STOCK</P><p id="no-two">SCAN</p>
-        
-    </div>
-    <nav>
-        <ul class="nav_links">
-            <li><a href="index.html">Home Page</a></li>
-            <li><a href="about us.html">About Us</a></li>
-            <li><a href="#">News</a></li>
-        </ul>
-    </nav>
-    <a class='cta' href="log_in.html"><button>Sign In</button></a>
+        <div class="logo-container">
+            <P>STOCK</P><p id="no-two">SCAN</p>
+        </div>
+        <nav class="nav-center">
+            <ul class="nav_links">
+                <li><a href="index.html">Home Page</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <a class='cta' href="log_in.html"><button>Sign In</button></a>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
     </header>
     <main class="container">
         <div class="text">
@@ -45,5 +48,11 @@
     <footer class = "footer">
         <p> &copy; 2025 Stock Scan. All Rights Reserved.</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav_links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

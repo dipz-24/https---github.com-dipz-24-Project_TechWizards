@@ -12,43 +12,50 @@
     <header>
         <div class="logo-container">
             <P>STOCK</P><p id="no-two">SCAN</p>
-            
         </div>
-        <nav>
+        <nav class="nav-center">
             <ul class="nav_links">
                 <li><a href="index.html">Home Page</a></li>
                 <li><a href="about us.html">About Us</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </nav>
-        <a class='cta' href="log_in.html"><button>Sign In</button></a>
-        </header>
-        
+        <div class="header-right">
+            <a class='cta' href="log_in.html"><button>Sign In</button></a>
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
     <div class="final-container">
-    <div class="login-container">
-        <h2>Log In</h2>
-        <form class="login-form">
-            <div class="input-group">
-                <label for="username">Username or Email</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username or email"
-                    minlength="4"
-                    maxlength="20"
-                    pattern="[A-Za-z0-9]+"
-                    title="Username must be 4-20 characters long and contain only letters and number" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password"
-                    placeholder="Enter your password"
-                    minlength="8" required>
-            </div>
-            <button type="submit" class="login-button">Sign In</button>
-        </form>
-        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        <div class="login-container">
+            <h2>Log In</h2>
+            <form class="login-form">
+                <div class="input-group">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username or email"
+                        minlength="4"
+                        maxlength="20"
+                        pattern="[A-Za-z0-9]+"
+                        title="Username must be 4-20 characters long and contain only letters and number" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password"
+                        placeholder="Enter your password"
+                        minlength="8" required>
+                </div>
+                <button type="submit" class="login-button">Sign In</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
     </div>
-</div>
-    <footer class = "footer">
+    <footer class="footer">
         <p> &copy; 2025 Stock Scan. All Rights Reserved.</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav_links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
